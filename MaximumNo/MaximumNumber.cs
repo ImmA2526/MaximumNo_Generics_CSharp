@@ -6,22 +6,22 @@ namespace MaximumNo
 {
     public class MaximumNumber
     {
-        public static int MaxNumber(int Firstno, int Secondno, int Thirdno)
+        public static int MaxNumber(int firstNumber, int secondNumber, int thirdNumber)
         {
-            if (Firstno.CompareTo(Secondno) > 0 && Secondno.CompareTo(Thirdno) > 0)
+            if (firstNumber.CompareTo(secondNumber) > 0 && secondNumber.CompareTo(thirdNumber) > 0)
             {
-                return Firstno;
+                return firstNumber;
             }
-            if (Secondno.CompareTo(Firstno) > 0 && Secondno.CompareTo(Thirdno) > 0)
+            if (secondNumber.CompareTo(firstNumber) > 0 && secondNumber.CompareTo(thirdNumber) > 0)
             {
                 Console.Write("this is greater");
-                return Secondno;
+                return secondNumber;
             }
-            if (Thirdno.CompareTo(Firstno) > 0 && Thirdno.CompareTo(Secondno) > 0)
+            if (thirdNumber.CompareTo(firstNumber) > 0 && thirdNumber.CompareTo(secondNumber) > 0)
             {
-                return Thirdno;
+                return thirdNumber;
             }
-            throw new Exception("Firstno,Secondno,Thirdno Same");
+            throw new Exception("firstNumber,secondNumber,thirdNumber Same");
         }
     }
 }

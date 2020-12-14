@@ -7,7 +7,7 @@ namespace MaximumNo
         static void Main(string[] args)
         {
             Console.WriteLine("**********Welcome To Maximum Number Problem**********");
-            Console.WriteLine("Max No..");
+            Console.Write("Max Integer No is : ");
             int Output = MaximumNumber.MaxNumber(22, 11, 10);
             Console.WriteLine(Output);
         }

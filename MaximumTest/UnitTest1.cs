@@ -6,7 +6,7 @@ namespace MaximumTest
     public class UnitTest1
     {
         MaximumNumber Max = new MaximumNumber();
-        private readonly MaximumNumber max;
+        //private readonly MaximumNumber max;
         public UnitTest1()
         {
             Max = new MaximumNumber();
