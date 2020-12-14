@@ -44,5 +44,38 @@ namespace MaximumTest
             int Result = MaximumNumber.MaxNumber(22, 24, 28);
             Assert.AreEqual(max, Result);
         }
+
+        /// <summary>
+        /// Check MAximum Float Number and return the First number is maximum
+        /// </summary>
+        [TestMethod]
+        public void CheckFloat_FirstNumber_WhenGreaterNo_FirstNumber()
+        {
+            double max = 20.1;
+            double Result = MaximumNumber.MaxFloatNumber(20.1,10.1,11.2);
+            Assert.AreEqual(max, Result);
+        }
+
+        /// <summary>
+        ///Check MAximum Float Number and return the Second number is maximum 
+        /// </summary>
+        [TestMethod]
+        public void CheckFloat_SecondNumber_WhenGreaterNo_SecondNumber()
+        {
+            double max = 28.1;
+            double Result= MaximumNumber.MaxFloatNumber(20.2, 28.1, 11.2);
+            Assert.AreEqual(max, Result);
+        }
+
+        /// <summary>
+        /// Check MAximum Float Number and return the Third number is maximum
+        /// </summary>
+        [TestMethod]
+        public void CheckFloat_ThirdNumber_WhenGreaterNo_ThirdNumber()
+        {
+            double max = 30.2;
+            double Result= MaximumNumber.MaxFloatNumber(20.2, 28.1, 30.2);
+            Assert.AreEqual(max, Result);
+        }
     }
 }
