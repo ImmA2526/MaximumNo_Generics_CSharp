@@ -6,7 +6,7 @@ namespace MaximumNo
 {
     public class MaximumNumber
     {
-        public static int MaxNumber(int firstNumber, int secondNumber, int thirdNumber)
+        public static T MaxNumber<T>(T firstNumber, T secondNumber, T thirdNumber) where T:IComparable
         {
             if (firstNumber.CompareTo(secondNumber) > 0 && secondNumber.CompareTo(thirdNumber) > 0)
             {
@@ -24,7 +24,7 @@ namespace MaximumNo
             throw new Exception("firstNumber,secondNumber,thirdNumber Same");
         }
 
-        public static double MaxFloatNumber(double firstNumber, double secondNumber, double thirdNumber)
+        public static T MaxFloatNumber<T>(T firstNumber, T secondNumber, T thirdNumber) where T:IComparable
         {
             if (firstNumber.CompareTo(secondNumber) > 0 && firstNumber.CompareTo(thirdNumber) > 0)
             {
@@ -41,7 +41,7 @@ namespace MaximumNo
             throw new Exception("firstNumber,secondNumber,thirdNumber Same.");
         }
 
-        public static string StringMaximumNumber(string S1, string S2, string S3)
+        public static T StringMaximumNumber<T>(T S1, T S2, T S3) where T:IComparable
         {
             if (S1.CompareTo(S2) > 0 && S1.CompareTo(S3) > 0)
             {
