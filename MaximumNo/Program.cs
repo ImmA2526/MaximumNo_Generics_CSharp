@@ -7,15 +7,9 @@ namespace MaximumNo
         static void Main(string[] args)
         {
             Console.WriteLine("**********Welcome To Maximum Number Problem**********");
-            Console.Write("Max Integer No is : ");
-            int Output = MaximumNumber.MaxNumber(22, 11, 10);
-            Console.WriteLine(Output);
-            Console.Write("Max Float Number is : ");
-            double FloatOutput = MaximumNumber.MaxFloatNumber(20.2, 11.2, 10.2);
-            Console.WriteLine(FloatOutput);
-            Console.Write("Maximum String is : ");
-            string StringOutput = MaximumNumber.StringMaximumNumber("Apple","Peach","Banana");
-            Console.Write(StringOutput);
+            int [] Output = { 11,22,50 };
+            MaximumNumber<int> generic = new MaximumNumber<int>(Output);
+            generic.PrintValue();
         }
     }
 }
