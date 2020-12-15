@@ -4,9 +4,17 @@ using System.Text;
 
 namespace MaximumNo
 {
-    public class MaximumNumber
+    public class MaximumNumber<T> where T:IComparable
     {
-        public static T MaxNumber<T>(T firstNumber, T secondNumber, T thirdNumber) where T:IComparable
+        public T firstNumber,secondNumber,thirdNumber;
+        
+        public MaximumNumber(T firstNumber, T secondNumber, T thirdNumber)
+        {
+            this.firstNumber = firstNumber;
+            this.secondNumber = secondNumber;
+            this.thirdNumber = thirdNumber;
+        }
+        public static T MaxNumber(T firstNumber, T secondNumber, T thirdNumber) 
         {
             if (firstNumber.CompareTo(secondNumber) > 0 && secondNumber.CompareTo(thirdNumber) > 0)
             {
@@ -24,7 +32,7 @@ namespace MaximumNo
             throw new Exception("firstNumber,secondNumber,thirdNumber Same");
         }
 
-        public static T MaxFloatNumber<T>(T firstNumber, T secondNumber, T thirdNumber) where T:IComparable
+        public static T MaxFloatNumber(T firstNumber, T secondNumber, T thirdNumber)
         {
             if (firstNumber.CompareTo(secondNumber) > 0 && firstNumber.CompareTo(thirdNumber) > 0)
             {
@@ -41,7 +49,7 @@ namespace MaximumNo
             throw new Exception("firstNumber,secondNumber,thirdNumber Same.");
         }
 
-        public static T StringMaximumNumber<T>(T S1, T S2, T S3) where T:IComparable
+        public static T StringMaximumNumber(T S1, T S2, T S3) 
         {
             if (S1.CompareTo(S2) > 0 && S1.CompareTo(S3) > 0)
             {
