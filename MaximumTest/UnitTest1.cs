@@ -73,7 +73,7 @@ namespace MaximumTest
         }
 
         /// <summary>
-        /// Check Maximum String and Return Apple
+        /// Check Maximum String and Return Peach
         /// </summary>
         [TestMethod]
         public void CheckFirstString_WhenGreater_ReturnPeach()
@@ -84,7 +84,7 @@ namespace MaximumTest
         }
 
         /// <summary>
-        /// Check MAximum String and Return Banana
+        /// Check MAximum String and Return Strawberry
         /// </summary>
         [TestMethod]
         public void CheckSecondString_WhenGreater_RetrunStrawberry()
