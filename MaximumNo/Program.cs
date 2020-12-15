@@ -13,6 +13,9 @@ namespace MaximumNo
             Console.Write("Max Float Number is : ");
             double FloatOutput = MaximumNumber.MaxFloatNumber(20.2, 11.2, 10.2);
             Console.WriteLine(FloatOutput);
+            Console.Write("Maximum String is : ");
+            string StringOutput = MaximumNumber.StringMaximumNumber("Apple","Peach","Banana");
+            Console.Write(StringOutput);
         }
     }
 }

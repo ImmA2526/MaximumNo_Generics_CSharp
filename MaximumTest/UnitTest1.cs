@@ -5,13 +5,7 @@ namespace MaximumTest
     [TestClass]
     public class UnitTest1
     {
-        MaximumNumber Max = new MaximumNumber();
-        //private readonly MaximumNumber max;
-        public UnitTest1()
-        {
-            Max = new MaximumNumber();
-        }
-        
+        MaximumNumber Max;
         /// <summary>
         /// Check MAximum Number and return the first number is maximum
         /// </summary>
@@ -75,6 +69,39 @@ namespace MaximumTest
         {
             double max = 30.2;
             double Result= MaximumNumber.MaxFloatNumber(20.2, 28.1, 30.2);
+            Assert.AreEqual(max, Result);
+        }
+
+        /// <summary>
+        /// Check Maximum String and Return Apple
+        /// </summary>
+        [TestMethod]
+        public void CheckFirstString_WhenGreater_ReturnPeach()
+        {
+            string max = "Peach";
+            string Result = MaximumNumber.StringMaximumNumber("Peach", "Apple", "Banana");
+            Assert.AreEqual(max, Result);
+        }
+
+        /// <summary>
+        /// Check MAximum String and Return Banana
+        /// </summary>
+        [TestMethod]
+        public void CheckSecondString_WhenGreater_RetrunStrawberry()
+        {
+            string max = "Strawberry";
+            string Result = MaximumNumber.StringMaximumNumber("Apple","Strawberry","Peach");
+            Assert.AreEqual(max, Result);
+        }
+
+        /// <summary>
+        /// Check Maximum Sting And Return Peach
+        /// </summary>
+        [TestMethod]
+        public void CheckThirdString_WhenGreater_RetrunPeach()
+        {
+            string max = "Peach";
+            string Result = MaximumNumber.StringMaximumNumber("Apple","Banana","Peach");
             Assert.AreEqual(max, Result);
         }
     }
